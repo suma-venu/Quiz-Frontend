@@ -37,7 +37,11 @@ function Login() {
       setMessage(data.message);
       setPassword("");
 
-      navigate("/StudentDashboard");
+      if (data.user.role === "ADMIN") {
+  navigate("/admin/dashboard");
+} else {
+  navigate("/dashboard");
+}
 
     } catch (error) {
       setMessage(error.message);

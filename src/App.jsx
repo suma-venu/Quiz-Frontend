@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
 import StudentDashboard from "./pages/StudentDashboard";
+import AdminDashboard from "./pages/AdminDashboard";
 
 function App() {
   return (
@@ -22,8 +23,12 @@ function App() {
   element={<Login />}
 />
 <Route
-  path="/StudentDashboard"
+  path="/dashboard"
   element={<StudentDashboard />}
+/>
+<Route
+  path="/admin/dashboard"
+  element={<AdminDashboard />}
 />
       </Routes>
     </BrowserRouter>
