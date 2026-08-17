@@ -3,6 +3,7 @@ import Register from "./pages/Register";
 import Login from "./pages/Login";
 import StudentDashboard from "./pages/StudentDashboard";
 import AdminDashboard from "./pages/AdminDashboard";
+import QuizManagement from "./pages/QuizManagement";
 
 function App() {
   return (
@@ -29,6 +30,11 @@ function App() {
 <Route
   path="/admin/dashboard"
   element={<AdminDashboard />}
+/>
+
+<Route
+  path="/admin/quizzes"
+  element={<QuizManagement />}
 />
       </Routes>
     </BrowserRouter>

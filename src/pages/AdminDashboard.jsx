@@ -134,9 +134,12 @@ function AdminDashboard() {
             User Management
           </a>
 
-          <a className="block rounded p-3 hover:bg-slate-700" href="#">
-            Quizzes
-          </a>
+          <button
+  onClick={() => navigate("/admin/quizzes")}
+  className="block w-full rounded p-3 text-left hover:bg-slate-700"
+>
+  Quizzes
+</button>
 
           <a className="block rounded p-3 hover:bg-slate-700" href="#">
             Questions
