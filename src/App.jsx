@@ -6,6 +6,11 @@ import AdminDashboard from "./pages/AdminDashboard";
 import QuizManagement from "./pages/QuizManagement";
 import CategoryManagement from "./pages/CategoryManagement";
 import QuestionManagement from "./pages/QuestionManagement";
+import StudentQuizList from "./pages/StudentQuizList";
+import QuizDetails from "./pages/QuizDetails";
+import QuizAttempt from "./pages/QuizAttempt";
+
+
 
 function App() {
   return (
@@ -47,6 +52,21 @@ function App() {
 <Route
   path="/admin/questions"
   element={<QuestionManagement />}
+/>
+
+<Route
+  path="/student/quizzes"
+  element={<StudentQuizList />}
+/>
+
+<Route
+  path="/student/quizzes/:id"
+  element={<QuizDetails />}
+/>
+
+<Route
+  path="/student/attempts/:attemptId"
+  element={<QuizAttempt />}
 />
 
       </Routes>

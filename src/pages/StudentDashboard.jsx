@@ -61,6 +61,13 @@ function StudentDashboard() {
       <p>Role: {user.role}</p>
       <p>Status: {user.status}</p>
 
+      <button
+  onClick={() => navigate("/student/quizzes")}
+  className="rounded bg-blue-600 px-5 py-3 text-white hover:bg-blue-700"
+>
+  View Available Quizzes
+</button>
+
       <button onClick={handleLogout}>
         Logout
       </button>
