@@ -9,6 +9,8 @@ import QuestionManagement from "./pages/QuestionManagement";
 import StudentQuizList from "./pages/StudentQuizList";
 import QuizDetails from "./pages/QuizDetails";
 import QuizAttempt from "./pages/QuizAttempt";
+import QuizResult from "./pages/QuizResult";
+import AttemptHistory from "./pages/AttemptHistory";
 
 
 
@@ -67,6 +69,16 @@ function App() {
 <Route
   path="/student/attempts/:attemptId"
   element={<QuizAttempt />}
+/>
+
+<Route
+  path="/student/results/:attemptId"
+  element={<QuizResult />}
+/>
+
+<Route
+  path="/student/attempts"
+  element={<AttemptHistory />}
 />
 
       </Routes>

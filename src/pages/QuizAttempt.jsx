@@ -116,7 +116,7 @@ function QuizAttempt() {
         JSON.stringify(data.result)
       );
 
-      setSubmissionResult(data.result);
+      navigate(`/student/results/${attemptId}`);
     } catch (submitError) {
       submittedRef.current = false;
       setError(submitError.message);
