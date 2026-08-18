@@ -4,6 +4,8 @@ import Login from "./pages/Login";
 import StudentDashboard from "./pages/StudentDashboard";
 import AdminDashboard from "./pages/AdminDashboard";
 import QuizManagement from "./pages/QuizManagement";
+import CategoryManagement from "./pages/CategoryManagement";
+import QuestionManagement from "./pages/QuestionManagement";
 
 function App() {
   return (
@@ -36,6 +38,17 @@ function App() {
   path="/admin/quizzes"
   element={<QuizManagement />}
 />
+
+<Route
+  path="/admin/categories"
+  element={<CategoryManagement />}
+/>
+
+<Route
+  path="/admin/questions"
+  element={<QuestionManagement />}
+/>
+
       </Routes>
     </BrowserRouter>
   );

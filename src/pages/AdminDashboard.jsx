@@ -11,6 +11,20 @@ function AdminDashboard() {
 
   const [users, setUsers] = useState([]);
   const [error, setError] = useState("");
+  const [quizId, setQuizId] = useState("");
+const [questionText, setQuestionText] = useState("");
+const [marks, setMarks] = useState(1);
+const [explanation, setExplanation] = useState("");
+const [difficulty, setDifficulty] = useState("EASY");
+
+const [options, setOptions] = useState([
+  { option_text: "", is_correct: true },
+  { option_text: "", is_correct: false },
+  { option_text: "", is_correct: false },
+  { option_text: "", is_correct: false },
+]);
+
+const [editingId, setEditingId] = useState(null);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -102,9 +116,19 @@ function AdminDashboard() {
     }));
 
     setError("");
-  } catch (error) {
-    setError(error.message);
+ } catch (error) {
+  if (
+    error.message === "Invalid or expired token" ||
+    error.message === "Access denied. No token provided."
+  ) {
+    localStorage.removeItem("token");
+    localStorage.removeItem("user");
+    navigate("/login");
+    return;
   }
+
+  setError(error.message);
+}
 };
 
   const handleLogout = () => {
@@ -141,9 +165,19 @@ function AdminDashboard() {
   Quizzes
 </button>
 
-          <a className="block rounded p-3 hover:bg-slate-700" href="#">
-            Questions
-          </a>
+<button
+  onClick={() => navigate("/admin/categories")}
+  className="block w-full rounded p-3 text-left hover:bg-slate-700"
+>
+  Categories
+</button>
+
+         <button
+  onClick={() => navigate("/admin/questions")}
+  className="text-left"
+>
+  Questions
+</button>
 
           <a className="block rounded p-3 hover:bg-slate-700" href="#">
             Results
