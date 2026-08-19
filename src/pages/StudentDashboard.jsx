@@ -336,6 +336,19 @@ function StudentDashboard() {
                 View history →
               </p>
             </button>
+
+            <button
+  type="button"
+  onClick={() => navigate("/leaderboard")}
+  className="rounded-xl bg-white p-7 text-left shadow transition hover:-translate-y-1 hover:shadow-lg"
+>
+  <div className="text-2xl">🏆</div>
+  <h3 className="mt-4 text-xl font-bold">Leaderboard</h3>
+  <p className="mt-2 text-slate-600">
+    View overall and category rankings.
+  </p>
+</button>
+
           </div>
         </section>
 

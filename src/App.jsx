@@ -12,6 +12,7 @@ import QuizAttempt from "./pages/QuizAttempt";
 import QuizResult from "./pages/QuizResult";
 import AttemptHistory from "./pages/AttemptHistory";
 import AdminAnalytics from "./pages/AdminAnalytics";
+import Leaderboard from "./pages/Leaderboard";
 
 
 
@@ -85,6 +86,11 @@ function App() {
 <Route
   path="/admin/analytics"
   element={<AdminAnalytics />}
+/>
+
+<Route
+  path="/leaderboard"
+  element={<Leaderboard />}
 />
 
       </Routes>
