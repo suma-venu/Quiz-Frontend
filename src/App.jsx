@@ -13,6 +13,7 @@ import QuizResult from "./pages/QuizResult";
 import AttemptHistory from "./pages/AttemptHistory";
 import AdminAnalytics from "./pages/AdminAnalytics";
 import Leaderboard from "./pages/Leaderboard";
+import Home from "./pages/Home";
 
 
 
@@ -20,6 +21,8 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
+
+        <Route path="/" element={<Home />} />
         <Route
           path="/"
           element={<Navigate to="/register" replace />}
