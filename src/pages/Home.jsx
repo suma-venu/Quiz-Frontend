@@ -125,7 +125,7 @@ function Home() {
           </div>
         </section>
 
-        <section className="border-y border-white/10 bg-white/[0.03] px-6 py-20">
+        <section className="border-y border-white/10 bg-white/3 px-6 py-20">
           <div className="mx-auto max-w-7xl">
             <div className="mx-auto max-w-2xl text-center">
               <p className="font-semibold text-blue-400">Platform Features</p>
@@ -202,7 +202,7 @@ function Home() {
         </section>
 
         <section className="px-6 pb-24">
-          <div className="mx-auto max-w-5xl rounded-3xl bg-gradient-to-r from-blue-600 to-indigo-700 p-10 text-center shadow-2xl sm:p-14">
+          <div className="mx-auto max-w-5xl rounded-3xl bg-linear-to-br from-blue-600 to-indigo-700 p-10 text-center shadow-2xl sm:p-14">
             <h2 className="text-3xl font-bold sm:text-4xl">
               Ready to test your knowledge?
             </h2>

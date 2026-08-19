@@ -14,6 +14,8 @@ import AttemptHistory from "./pages/AttemptHistory";
 import AdminAnalytics from "./pages/AdminAnalytics";
 import Leaderboard from "./pages/Leaderboard";
 import Home from "./pages/Home";
+import UserManagement from "./pages/UserManagement";
+import AdminResults from "./pages/AdminResults";
 
 
 
@@ -94,6 +96,16 @@ function App() {
 <Route
   path="/leaderboard"
   element={<Leaderboard />}
+/>
+
+<Route
+  path="/admin/users"
+  element={<UserManagement />}
+/>
+
+<Route
+  path="/admin/results"
+  element={<AdminResults />}
 />
 
       </Routes>

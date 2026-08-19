@@ -49,12 +49,12 @@ function Login() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-950 via-blue-950 to-indigo-950">
+    <div className="min-h-screen bg-linear-to-br from-slate-950 via-blue-950 to-indigo-950">
       <PublicNavbar />
 
       <main className="flex min-h-[calc(100vh-73px)] items-center justify-center px-5 py-12">
         <div className="grid w-full max-w-5xl overflow-hidden rounded-2xl bg-white shadow-2xl lg:grid-cols-2">
-          <section className="hidden bg-gradient-to-br from-indigo-700 to-purple-800 p-12 text-white lg:flex lg:flex-col lg:justify-center">
+          <section className="hidden bg-linear-to-br from-indigo-700 to-purple-800 p-12 text-white lg:flex lg:flex-col lg:justify-center">
             <p className="text-sm font-semibold uppercase tracking-[0.3em] text-indigo-200">
               Welcome Back
             </p>

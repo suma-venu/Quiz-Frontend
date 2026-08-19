@@ -53,12 +53,12 @@ function Register() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-950 via-blue-950 to-indigo-950">
+    <div className="min-h-screen bg-linear-to-br from-slate-950 via-blue-950 to-indigo-950">
       <PublicNavbar />
 
       <div className="px-5 py-10">
       <div className="mx-auto grid min-h-[calc(100vh-10rem)] max-w-6xl overflow-hidden rounded-2xl bg-white shadow-2xl lg:grid-cols-2">
-        <section className="hidden bg-gradient-to-br from-blue-700 to-indigo-800 p-12 text-white lg:flex lg:flex-col lg:justify-between">
+        <section className="hidden bg-linear-to-br from-blue-700 to-indigo-800 p-12 text-white lg:flex lg:flex-col lg:justify-between">
           <div>
             <button
               type="button"
