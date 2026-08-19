@@ -11,6 +11,7 @@ import QuizDetails from "./pages/QuizDetails";
 import QuizAttempt from "./pages/QuizAttempt";
 import QuizResult from "./pages/QuizResult";
 import AttemptHistory from "./pages/AttemptHistory";
+import AdminAnalytics from "./pages/AdminAnalytics";
 
 
 
@@ -79,6 +80,11 @@ function App() {
 <Route
   path="/student/attempts"
   element={<AttemptHistory />}
+/>
+
+<Route
+  path="/admin/analytics"
+  element={<AdminAnalytics />}
 />
 
       </Routes>

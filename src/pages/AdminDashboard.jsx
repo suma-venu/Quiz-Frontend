@@ -179,6 +179,13 @@ const [editingId, setEditingId] = useState(null);
   Questions
 </button>
 
+<button
+  onClick={() => navigate("/admin/analytics")}
+  className="text-left"
+>
+  Analytics
+</button>
+
           <a className="block rounded p-3 hover:bg-slate-700" href="#">
             Results
           </a>
