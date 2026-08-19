@@ -26,7 +26,7 @@ function AdminDashboard() {
     const loadStatistics = async () => {
       try {
         const response = await fetch(
-          "http://localhost:5000/api/admin/statistics",
+          "https://quiz-backend-9ihm.onrender.com/api/admin/statistics",
           {
             headers: {
               Authorization: `Bearer ${token}`,

@@ -27,7 +27,7 @@ function StudentDashboard() {
     const fetchProfile = async () => {
       try {
         const response = await fetch(
-          "http://localhost:5000/api/auth/profile",
+          "https://quiz-backend-9ihm.onrender.com/api/auth/profile",
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -66,7 +66,7 @@ function StudentDashboard() {
     const fetchStatistics = async () => {
       try {
         const response = await fetch(
-          "http://localhost:5000/api/student/statistics",
+          "https://quiz-backend-9ihm.onrender.com/api/student/statistics",
           {
             headers: {
               Authorization: `Bearer ${token}`,

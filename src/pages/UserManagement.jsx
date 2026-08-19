@@ -13,7 +13,7 @@ function UserManagement() {
   const fetchUsers = async () => {
     try {
       const response = await fetch(
-        "http://localhost:5000/api/admin/users",
+        "https://quiz-backend-9ihm.onrender.com/api/admin/users",
         {
           headers: { Authorization: `Bearer ${token}` },
         }
@@ -50,7 +50,7 @@ function UserManagement() {
 
     try {
       const response = await fetch(
-        `http://localhost:5000/api/admin/users/${user.id}/status`,
+        `https://quiz-backend-9ihm.onrender.com/api/admin/users/${user.id}/status`,
         {
           method: "PATCH",
           headers: {

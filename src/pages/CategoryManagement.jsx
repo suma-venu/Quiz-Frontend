@@ -16,7 +16,7 @@ function CategoryManagement() {
 
   const loadCategories = async () => {
     const response = await fetch(
-      "http://localhost:5000/api/admin/categories",
+      "https://quiz-backend-9ihm.onrender.com/api/admin/categories",
       {
         headers: getHeaders()
       }
@@ -50,8 +50,8 @@ function CategoryManagement() {
     event.preventDefault();
 
     const url = editingId
-      ? `http://localhost:5000/api/admin/categories/${editingId}`
-      : "http://localhost:5000/api/admin/categories";
+      ? `https://quiz-backend-9ihm.onrender.com/api/admin/categories/${editingId}`
+      : "https://quiz-backend-9ihm.onrender.com/api/admin/categories";
 
     try {
       const response = await fetch(url, {
@@ -92,7 +92,7 @@ function CategoryManagement() {
 
     try {
       const response = await fetch(
-        `http://localhost:5000/api/admin/categories/${categoryId}`,
+        `https://quiz-backend-9ihm.onrender.com/api/admin/categories/${categoryId}`,
         {
           method: "DELETE",
           headers: getHeaders()

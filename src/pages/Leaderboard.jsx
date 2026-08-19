@@ -21,7 +21,7 @@ function Leaderboard() {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/leaderboard/overall",
+        "https://quiz-backend-9ihm.onrender.com/api/leaderboard/overall",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -55,7 +55,7 @@ function Leaderboard() {
 
     try {
       const response = await fetch(
-        `http://localhost:5000/api/leaderboard/category/${categoryId}`,
+        `https://quiz-backend-9ihm.onrender.com/api/leaderboard/category/${categoryId}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -84,7 +84,7 @@ function Leaderboard() {
     const loadPage = async () => {
       try {
         const categoryResponse = await fetch(
-          "http://localhost:5000/api/leaderboard/categories",
+          "https://quiz-backend-9ihm.onrender.com/api/leaderboard/categories",
           {
             headers: {
               Authorization: `Bearer ${token}`,

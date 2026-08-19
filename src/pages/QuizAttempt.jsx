@@ -92,7 +92,7 @@ function QuizAttempt() {
 
     try {
       const response = await fetch(
-        `http://localhost:5000/api/student/attempts/${attemptId}/submit`,
+        `https://quiz-backend-9ihm.onrender.com/api/student/attempts/${attemptId}/submit`,
         {
           method: "POST",
           headers: {

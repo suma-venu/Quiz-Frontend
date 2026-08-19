@@ -14,7 +14,7 @@ function StudentQuizList() {
     const fetchQuizzes = async () => {
       try {
         const response = await fetch(
-          "http://localhost:5000/api/student/quizzes",
+          "https://quiz-backend-9ihm.onrender.com/api/student/quizzes",
           {
             headers: {
               Authorization: `Bearer ${token}`,

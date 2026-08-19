@@ -26,7 +26,7 @@ function QuizManagement() {
 
   const loadQuizzes = async () => {
     const response = await fetch(
-      "http://localhost:5000/api/admin/quizzes",
+      "https://quiz-backend-9ihm.onrender.com/api/admin/quizzes",
       {
         headers: getHeaders()
       }
@@ -54,7 +54,7 @@ function QuizManagement() {
     const loadInitialData = async () => {
       try {
         const categoriesResponse = await fetch(
-          "http://localhost:5000/api/admin/categories",
+          "https://quiz-backend-9ihm.onrender.com/api/admin/categories",
           {
             headers: getHeaders()
           }
@@ -87,8 +87,8 @@ function QuizManagement() {
     event.preventDefault();
 
     const url = editingId
-      ? `http://localhost:5000/api/admin/quizzes/${editingId}`
-      : "http://localhost:5000/api/admin/quizzes";
+      ? `https://quiz-backend-9ihm.onrender.com/api/admin/quizzes/${editingId}`
+      : "https://quiz-backend-9ihm.onrender.com/api/admin/quizzes";
 
     try {
       const response = await fetch(url, {
@@ -148,7 +148,7 @@ function QuizManagement() {
 
     try {
       const response = await fetch(
-        `http://localhost:5000/api/admin/quizzes/${quizId}`,
+        `https://quiz-backend-9ihm.onrender.com/api/admin/quizzes/${quizId}`,
         {
           method: "DELETE",
           headers: getHeaders()
@@ -171,7 +171,7 @@ function QuizManagement() {
   const handleStatus = async (quizId) => {
     try {
       const response = await fetch(
-        `http://localhost:5000/api/admin/quizzes/${quizId}/status`,
+        `https://quiz-backend-9ihm.onrender.com/api/admin/quizzes/${quizId}/status`,
         {
           method: "PATCH",
           headers: getHeaders()

@@ -15,7 +15,7 @@ function AdminResults() {
     const fetchResults = async () => {
       try {
         const response = await fetch(
-          "http://localhost:5000/api/admin/results",
+          "https://quiz-backend-9ihm.onrender.com/api/admin/results",
           { headers: { Authorization: `Bearer ${token}` } }
         );
         const data = await response.json();

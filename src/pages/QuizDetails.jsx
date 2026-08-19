@@ -16,7 +16,7 @@ function QuizDetails() {
     const fetchQuizDetails = async () => {
       try {
         const response = await fetch(
-          `http://localhost:5000/api/student/quizzes/${id}`,
+          `https://quiz-backend-9ihm.onrender.com/api/student/quizzes/${id}`,
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -47,7 +47,7 @@ function QuizDetails() {
 
     try {
       const response = await fetch(
-        `http://localhost:5000/api/student/quizzes/${id}/start`,
+        `https://quiz-backend-9ihm.onrender.com/api/student/quizzes/${id}/start`,
         {
           method: "POST",
           headers: {

@@ -14,7 +14,7 @@ function AttemptHistory() {
     const fetchAttempts = async () => {
       try {
         const response = await fetch(
-          "http://localhost:5000/api/student/attempts",
+          "https://quiz-backend-9ihm.onrender.com/api/student/attempts",
           {
             headers: {
               Authorization: `Bearer ${token}`,

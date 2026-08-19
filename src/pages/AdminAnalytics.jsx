@@ -14,7 +14,7 @@ function AdminAnalytics() {
     const fetchAnalytics = async () => {
       try {
         const response = await fetch(
-          "http://localhost:5000/api/admin/analytics",
+          "https://quiz-backend-9ihm.onrender.com/api/admin/analytics",
           {
             headers: {
               Authorization: `Bearer ${token}`,

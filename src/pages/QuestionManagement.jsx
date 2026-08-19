@@ -28,7 +28,7 @@ const [options, setOptions] = useState([
 
   const fetchQuizzes = async () => {
     const response = await fetch(
-      "http://localhost:5000/api/admin/quizzes",
+      "https://quiz-backend-9ihm.onrender.com/api/admin/quizzes",
       {
         headers: {
           Authorization: `Bearer ${token}`,
@@ -47,7 +47,7 @@ const [options, setOptions] = useState([
 
   const fetchQuestions = async () => {
     const response = await fetch(
-      "http://localhost:5000/api/admin/questions",
+      "https://quiz-backend-9ihm.onrender.com/api/admin/questions",
       {
         headers: {
           Authorization: `Bearer ${token}`,
@@ -109,8 +109,8 @@ const handleSubmit = async (event) => {
 
   try {
     const url = editingId
-      ? `http://localhost:5000/api/admin/questions/${editingId}`
-      : "http://localhost:5000/api/admin/questions";
+      ? `https://quiz-backend-9ihm.onrender.com/api/admin/questions/${editingId}`
+      : "https://quiz-backend-9ihm.onrender.com/api/admin/questions";
 
     const method = editingId ? "PUT" : "POST";
 
@@ -182,7 +182,7 @@ const handleDelete = async (questionId) => {
 
   try {
     const response = await fetch(
-      `http://localhost:5000/api/admin/questions/${questionId}`,
+      `https://quiz-backend-9ihm.onrender.com/api/admin/questions/${questionId}`,
       {
         method: "DELETE",
         headers: {
